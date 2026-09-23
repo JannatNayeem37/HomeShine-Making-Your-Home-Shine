@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ink">#0B2B28</color>
+    <color name="ink_light">#5B6B62</color>
+    <color name="gray_text">#8A9A90</color>
+    <color name="teal">#0F5C56</color>
+    <color name="teal_dark">#1E4D40</color>
+    <color name="teal_deep">#0A423D</color>
+    <color name="sage">#D9EEE7</color>
+    <color name="sage_2">#EDF7F3</color>
+    <color name="sage_light">#DCEEE1</color>
+    <color name="cream">#FBF9F0</color>
+    <color name="lemon">#FFC94A</color>
+    <color name="lemon_deep">#E8A800</color>
+    <color name="lemon_dark">#D9A916</color>
+    <color name="coral">#FF6F5B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="line">#1A0B2B28</color>
+    <color name="dirty_brown">#4E483E</color>
+    <color name="ink_faded">#990B2B28</color>
+    <color name="white_faint">#1FFFFFFF</color>
+    <color name="purple">#6C5BD1</color>
+    <color name="purple_dark">#5A49B8</color>
+    <color name="purple_light_bg">#EDE9FB</color>
+    <color name="pink_light">#FADCE0</color>
+    <color name="peach_light">#FCE8CF</color>
+    <color name="border">#E7DDCB</color>
+</resources>

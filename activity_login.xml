@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:clipToPadding="false"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="40dp"
+            android:paddingBottom="28dp">
+
+            <!-- Logo / brand -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <FrameLayout
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/bg_logo_circle">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="🏠"
+                        android:textSize="26sp" />
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HomeShine"
+                    android:textColor="@color/teal"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Sparkling clean homes, on demand"
+                    android:textColor="@color/ink_faded"
+                    android:textSize="12.5sp" />
+            </LinearLayout>
+
+            <!-- Mode Tabs: Log In / Sign Up -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_tab_container"
+                android:padding="4dp"
+                android:layout_marginBottom="18dp">
+
+                <TextView
+                    android:id="@+id/tabLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Log In"
+                    android:textStyle="bold"
+                    android:textSize="13.5sp"
+                    android:textColor="@color/teal_deep"
+                    android:background="@drawable/bg_tab_active"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/tabSignup"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Sign Up"
+                    android:textStyle="bold"
+                    android:textSize="13.5sp"
+                    android:textColor="@color/ink_faded"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- Role Selector: User Login vs Admin Login -->
+            <LinearLayout
+                android:id="@+id/roleSelectorContainer"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/roleUserLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:background="@drawable/bg_pill_lemon"
+                    android:gravity="center"
+                    android:text="👤 User Login"
+                    android:textColor="@color/ink"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/roleAdminLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:background="@drawable/bg_card_stroke"
+                    android:gravity="center"
+                    android:text="⚙️ Admin Login"
+                    android:textColor="@color/ink"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- LOGIN FORM -->
+            <LinearLayout
+                android:id="@+id/loginForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/labelEmail"
+                    style="@style/FieldLabel"
+                    android:text="Phone or Email" />
+
+                <EditText
+                    android:id="@+id/loginPhoneEmail"
+                    style="@style/InputField"
+                    android:hint="e.g. jannat@homeshine.com"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/loginPassword"
+                    style="@style/InputField"
+                    android:hint="Enter your password"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginBottom="18dp"
+                    android:text="Forgot password?"
+                    android:textColor="@color/teal"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn_primary"
+                    android:text="Log In"
+                    android:textColor="@color/white"
+                    android:textSize="14.5sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- SIGN UP FORM -->
+            <LinearLayout
+                android:id="@+id/signupForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:text="Full Name" />
+
+                <EditText
+                    android:id="@+id/signupName"
+                    style="@style/InputField"
+                    android:hint="Your name"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:text="Phone or Email" />
+
+                <EditText
+                    android:id="@+id/signupPhoneEmail"
+                    style="@style/InputField"
+                    android:hint="e.g. 01XXXXXXXXX"
+                    android:inputType="textEmailAddress" />
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:text="Password" />
+
+                <EditText
+                    android:id="@+id/signupPassword"
+                    style="@style/InputField"
+                    android:hint="Create a password"
+                    android:inputType="textPassword" />
+
+                <TextView
+                    style="@style/FieldLabel"
+                    android:text="Confirm Password" />
+
+                <EditText
+                    android:id="@+id/signupConfirmPassword"
+                    style="@style/InputField"
+                    android:hint="Re-enter password"
+                    android:inputType="textPassword"
+                    android:layout_marginBottom="18dp" />
+
+                <TextView
+                    android:id="@+id/btnSignup"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn_primary"
+                    android:text="Create Account"
+                    android:textColor="@color/white"
+                    android:textSize="14.5sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- Divider -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/line" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="or continue with"
+                    android:textColor="@color/ink_faded"
+                    android:textSize="11.5sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/line" />
+            </LinearLayout>
+
+            <!-- Social buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn_ghost"
+                    android:text="🔎  Google"
+                    android:textColor="@color/ink"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+                <TextView
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:background="@drawable/bg_btn_ghost"
+                    android:text="📘  Facebook"
+                    android:textColor="@color/ink"
+                    android:textSize="12.5sp"
+                    android:textStyle="bold"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- Switch prompt -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/switchPromptText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Don't have an account? "
+                    android:textColor="@color/ink_faded"
+                    android:textSize="12.5sp" />
+
+                <TextView
+                    android:id="@+id/switchPromptAction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textColor="@color/teal"
+                    android:textStyle="bold"
+                    android:textSize="12.5sp"
+                    android:clickable="true"
+                    android:focusable="true" />
+            </LinearLayout>
+
+            <!-- Terms -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="By continuing, you agree to HomeShine's Terms of Service and Privacy Policy"
+                android:textColor="@color/ink_faded"
+                android:textSize="10.5sp"
+                android:lineSpacingExtra="2dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

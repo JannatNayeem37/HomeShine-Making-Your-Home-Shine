@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "274319024441",
+    "project_id": "homeshine-3b879",
+    "storage_bucket": "homeshine-3b879.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274319024441:android:b17ce9d70f8b85cbdf08e8",
+        "android_client_info": {
+          "package_name": "com.example.homeshine"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9fT-h1XNbFeIWLzcD2xQtveGqo0qXAio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
